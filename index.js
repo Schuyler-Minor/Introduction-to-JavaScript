@@ -19,8 +19,11 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
+  if (votingAge => 18)
+    return true;
 
-
+  console.log(votingAge(20))
 
 /*
 Task 1b - Values
@@ -60,10 +63,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(num1, num2){
+  return num1 * num2;
 }
-
+console.log(multiply(40, 30))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -76,8 +79,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+ 
 }
 
 
@@ -151,9 +154,20 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+  if(user === computer){
+    return "it's a tie"
+  }else if (user === "rock" && computer === "scissors"){
+    return "you win!"
+  }else if (user === "paper" && computer === "rock"){
+    return "you win!"
+  }else if (user === "scissors" && computer === "paper"){
+    return "you win!"
+  } else {
+    return "you lose!"
+  }
 }
 
+console.log(game("rock", "rock"))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -197,10 +211,12 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      for (let i = number; i > 0; i--){
+        return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number - 1} bottles of soda on the wall`
+      }
 }
-
+console.log(annoyingSong(29))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
