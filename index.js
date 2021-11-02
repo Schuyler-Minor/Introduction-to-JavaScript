@@ -19,11 +19,10 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = 18;
-  if (votingAge => 18)
-    return true;
-
-  console.log(votingAge(20))
+let votingAge = 20;
+if(votingAge >= 18){
+  console.log(true)
+}
 
 /*
 Task 1b - Values
@@ -79,9 +78,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(age){
- 
+function dogYears(humanYears){
+  return humanYears * 7
 }
+console.log(dogYears(5))
 
 
 
@@ -153,6 +153,15 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let computer = Math.random();
+if(computer <= 0.3) {
+  computer = 'rock'
+} else if(computer >= 0.6){
+  computer = 'paper'
+} else if (computer > 0.6){
+  computer = 'scissors';
+}
+
 function game(user, computer){
   if(user === computer){
     return "it's a tie"
@@ -167,7 +176,7 @@ function game(user, computer){
   }
 }
 
-console.log(game("rock", "rock"))
+console.log(game("rock", computer))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
