@@ -34,9 +34,12 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+let jumper = 'Schuyler';
+let jump = 'high';
+ if (jump === 'high'){
+   jumper = 'Jon';
+ }
+console.log(jumper);
 
 
 /*
@@ -49,7 +52,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+const party = '1999';
+console.log(Number(party))
 
 
 
@@ -65,7 +69,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
-console.log(multiply(40, 30))
+console.log('task 1 d:', multiply(40, 30))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -125,7 +129,7 @@ function hungryDog(weight, age){
     return weight * 0.04;
   }else if(age < 0.583 && age >=  0.333){
     return weight * 0.05;
-  }else if(age <0.333){
+  }else if(age < 0.333){
     return weight * 0.1;
   }
 }
@@ -190,10 +194,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  return km * 0.621371;
 }
-
+console.log(miles(2));
 
 
 //Task 5b - Feet to CM
@@ -204,11 +208,11 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48;
 }
 
-
+console.log(feet(30));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -242,10 +246,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if(score >= 90){
+    return 'you got an A';
+  }else if(score < 90 && score >= 80){
+    return 'you got a B';
+  } else if(score < 80 && score >= 70){
+    return 'you got a C';
+  }else if(score < 70 && score >= 60){
+    return 'you got a D';
+  }else if(score < 60){
+    return 'you got an F';
+  }
 }
-
+console.log(grade(95));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
